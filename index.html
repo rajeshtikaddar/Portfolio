@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajesh-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="header" >
+            <div class="left"><img src="/portfolio/Rajesh-removebg-preview.png" alt="" id="logopng"></div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            
+                <img src="rajesh-01-removebg-preview.png" alt="Photo" class="img" style=" width: 100%;
+  max-width: 280px;
+  height: auto;">
+            </div>
+            <div class="rightsection">
+                <div class="leftsection">
+                Hi , My name is <span class="name">Rajesh</span>
+                <div>I am a student</div>
+            </div>
+        </section>
+<hr color="gray">
+
+
+<!-- ---------------------ABOUT--------------------------- -->
+       <div id="about"></div>
+        <section class="secondsection">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a passionate and dedicated Computer Science student with a strong interest in web development and programming. I enjoy creating responsive and interactive websites using HTML, CSS, JavaScript, and C programming. I have developed several projects, including games and web applications, which helped me improve my problem-solving and creative thinking skills. I am always eager to learn new technologies and continuously enhance my technical knowledge to build innovative digital solutions.</p>
+                        <div class="tab-title">
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                        </div>
+
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>Web Delovement</span><br>Desiging Web/App interfaces</li>
+                                <li><span>Programming Languages</span><br>C,C++,Python,Java,Shell scripting,Sql</li>
+                                <li><span>App Delovement</span><br>Building Android/ios apps</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Web Delovement Internship</span><br>Internship at TechSolid Development <a href="https://www.linkedin.com/posts/rajesh-tikadar-7243a1276_certificate-of-internship-ugcPost-7383520165398790144-472C/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAENVOMwBH_f7w2XzilGy8FOPlPZez7FBHNs"><i class="fa-solid fa-up-right-from-square sharebtn"></i></a></li>
+                                <li><span>Hackathons</span><br>Participate many online hackathons and other events </li>
+                                <!--  <li><span>App Delovement</span><br>Building Android/ios apps</li> -->
+
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024 - current</span><br>RKMRC CS</li>
+                                <li><span>2022 - 2024</span><br>HS (10+2)</li>
+                                <li><span>2022</span><br> 10 </li>
+
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="about-col-1">
+                        <img src="photo.jpg" style="width: 100%; max-width: 
+                        250px; height: auto;">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <!-- -------------Portfolio-------------- -->
+        <div id="project"></div>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="worklist">
+                    <div class="work">
+                        <img src="/portfolio/work-01.jpeg">
+                        <div class="layer">
+                            <h3> OrderEasy</h3>
+                            <p>OrderEasy is a digital ordering platform that helps businesses receive, manage, and track online customer orders through mobile apps and web-based dashboards.</p>
+                            <a href="https://rajeshtikaddar.github.io/OrderEasy/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="/portfolio/work-05.jpeg">
+                        <div class="layer">
+                            <h3> Tic Tac Toe </h3>
+                            <p>Tic Tac Toe is a two-player game played on a 3×3 grid where players take turns marking X or O. The player who forms a straight line first wins the game.</p>
+                            <a href="https://rajeshtikaddar.github.io/TicTacToeGame/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="/portfolio/work-04.jpeg">
+                        <div class="layer">
+                            <h3> Hand-Cricket</h3>
+                            <p>Hand Cricket is a simple finger-based game where players score runs by showing numbers with their hands. If both players show the same number, the batsman is out.</p>
+                            <a href="https://rajeshtikaddar.github.io/HandCricketGame/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work hidden-work">
+                        <img src="/portfolio/work-06.jpeg">
+                        <div class="layer">
+                            <h3>Rock Paper Scissors</h3>
+                            <p>Rock Paper Scissors is a fun hand game played between two players. Players choose rock, paper, or scissors at the same time. Rock beats scissors, scissors beats paper, and paper beats rock.</p>
+                            <a href="https://rajeshtikaddar.github.io/RockPaperScissors/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="btn see-btn" onclick="showProject()">see more</button>
+                <!-- <a href="#" class="btn" onclick="showProject()">see more</a> -->
+            </div>
+    </div>
+    
+
+
+    <!-- ----------------Contact---------------- -->
+     <!-- <div id="contact"></div> -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> rajeshtikadar05@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 9733811590</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rajesh.tikadar.395/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/rajesh.tikadar__/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/Rtikadar25/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/rajesh-tikadar-7243a1276"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/rajeshtikaddar/"><i class="fa-brands fa-square-github"></i></a>
+
+                    </div>
+                    <a href="/portfolio/my-cv.pdf" download class="btn btn2"> Download CV </a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg">
+                         
+                    </span>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>Copyright &copyRajesh. Made with <i class="fa-solid fa-heart"></i> by Rajesh Tikadar </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
